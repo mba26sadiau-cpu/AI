@@ -1,0 +1,231 @@
+{
+  "weeks_of_history": 260,
+  "product_lines": [
+    "Lycra Tracksuit",
+    "School T-Shirt",
+    "Sports Day Kit",
+    "Team Jersey"
+  ],
+  "validation_weeks": 52,
+  "holdout_weeks": 52,
+  "service_level": 0.95,
+  "unit_cost_inr": 185,
+  "lead_time_days": {
+    "mean": 10.0,
+    "sd": 4.9
+  },
+  "mean_holdout_mape_seasonal_naive": 18.5,
+  "mean_holdout_mape_per_line_selection": 17.6,
+  "error_reduction_pct": 4.6,
+  "safety_stock_units_freed": 82,
+  "working_capital_freed_inr": 15170,
+  "leadtime_share_of_variance": 0.825,
+  "units_freed_by_halving_leadtime_sd": 2257,
+  "capital_freed_by_halving_leadtime_sd_inr": 417545,
+  "model_selection": [
+    {
+      "product_line": "Lycra Tracksuit",
+      "selected_model": "Seasonal index",
+      "holdout_mape_naive": 19.6,
+      "holdout_mape_selected": 17.0,
+      "improvement_pct": 13.1
+    },
+    {
+      "product_line": "School T-Shirt",
+      "selected_model": "Seasonal index",
+      "holdout_mape_naive": 15.1,
+      "holdout_mape_selected": 12.7,
+      "improvement_pct": 16.1
+    },
+    {
+      "product_line": "Sports Day Kit",
+      "selected_model": "Seasonal index",
+      "holdout_mape_naive": 19.4,
+      "holdout_mape_selected": 20.3,
+      "improvement_pct": -4.5
+    },
+    {
+      "product_line": "Team Jersey",
+      "selected_model": "Seasonal index",
+      "holdout_mape_naive": 19.8,
+      "holdout_mape_selected": 20.5,
+      "improvement_pct": -3.5
+    }
+  ],
+  "scores": [
+    {
+      "product_line": "Lycra Tracksuit",
+      "model": "Seasonal naive",
+      "mae": 280.3,
+      "rmse": 410.3,
+      "mape_pct": 19.6
+    },
+    {
+      "product_line": "Lycra Tracksuit",
+      "model": "4-week average",
+      "mae": 351.3,
+      "rmse": 504.0,
+      "mape_pct": 24.0
+    },
+    {
+      "product_line": "Lycra Tracksuit",
+      "model": "Seasonal index",
+      "mae": 236.5,
+      "rmse": 345.8,
+      "mape_pct": 17.0
+    },
+    {
+      "product_line": "Lycra Tracksuit",
+      "model": "Gradient boosting",
+      "mae": 322.7,
+      "rmse": 503.4,
+      "mape_pct": 21.3
+    },
+    {
+      "product_line": "School T-Shirt",
+      "model": "Seasonal naive",
+      "mae": 158.9,
+      "rmse": 224.7,
+      "mape_pct": 15.1
+    },
+    {
+      "product_line": "School T-Shirt",
+      "model": "4-week average",
+      "mae": 237.2,
+      "rmse": 335.2,
+      "mape_pct": 21.3
+    },
+    {
+      "product_line": "School T-Shirt",
+      "model": "Seasonal index",
+      "mae": 128.0,
+      "rmse": 160.7,
+      "mape_pct": 12.7
+    },
+    {
+      "product_line": "School T-Shirt",
+      "model": "Gradient boosting",
+      "mae": 178.5,
+      "rmse": 232.6,
+      "mape_pct": 17.4
+    },
+    {
+      "product_line": "Sports Day Kit",
+      "model": "Seasonal naive",
+      "mae": 366.1,
+      "rmse": 685.6,
+      "mape_pct": 19.4
+    },
+    {
+      "product_line": "Sports Day Kit",
+      "model": "4-week average",
+      "mae": 550.3,
+      "rmse": 878.5,
+      "mape_pct": 29.0
+    },
+    {
+      "product_line": "Sports Day Kit",
+      "model": "Seasonal index",
+      "mae": 348.9,
+      "rmse": 711.9,
+      "mape_pct": 20.3
+    },
+    {
+      "product_line": "Sports Day Kit",
+      "model": "Gradient boosting",
+      "mae": 364.7,
+      "rmse": 688.3,
+      "mape_pct": 19.7
+    },
+    {
+      "product_line": "Team Jersey",
+      "model": "Seasonal naive",
+      "mae": 127.0,
+      "rmse": 182.3,
+      "mape_pct": 19.8
+    },
+    {
+      "product_line": "Team Jersey",
+      "model": "4-week average",
+      "mae": 205.1,
+      "rmse": 264.1,
+      "mape_pct": 33.1
+    },
+    {
+      "product_line": "Team Jersey",
+      "model": "Seasonal index",
+      "mae": 121.3,
+      "rmse": 155.1,
+      "mape_pct": 20.5
+    },
+    {
+      "product_line": "Team Jersey",
+      "model": "Gradient boosting",
+      "mae": 161.8,
+      "rmse": 230.5,
+      "mape_pct": 27.2
+    }
+  ],
+  "inventory_policy": [
+    {
+      "product_line": "Lycra Tracksuit",
+      "selected_model": "Seasonal index",
+      "mean_weekly_demand": 1370,
+      "forecast_rmse_naive": 410.3,
+      "forecast_rmse_model": 345.8,
+      "safety_stock_naive": 1775,
+      "safety_stock_model": 1722,
+      "safety_stock_model_plus_tight_leadtimes": 1043,
+      "reorder_point_model": 3677,
+      "leadtime_share_of_variance": 0.844,
+      "units_freed": 53,
+      "units_freed_by_leadtime_discipline": 679,
+      "capital_freed_inr": 9805
+    },
+    {
+      "product_line": "School T-Shirt",
+      "selected_model": "Seasonal index",
+      "mean_weekly_demand": 1019,
+      "forecast_rmse_naive": 224.7,
+      "forecast_rmse_model": 160.7,
+      "safety_stock_naive": 1256,
+      "safety_stock_model": 1218,
+      "safety_stock_model_plus_tight_leadtimes": 668,
+      "reorder_point_model": 2672,
+      "leadtime_share_of_variance": 0.933,
+      "units_freed": 38,
+      "units_freed_by_leadtime_discipline": 550,
+      "capital_freed_inr": 7030
+    },
+    {
+      "product_line": "Sports Day Kit",
+      "selected_model": "Seasonal index",
+      "mean_weekly_demand": 1671,
+      "forecast_rmse_naive": 685.6,
+      "forecast_rmse_model": 711.9,
+      "safety_stock_naive": 2352,
+      "safety_stock_model": 2382,
+      "safety_stock_model_plus_tight_leadtimes": 1699,
+      "reorder_point_model": 4766,
+      "leadtime_share_of_variance": 0.655,
+      "units_freed": -30,
+      "units_freed_by_leadtime_discipline": 683,
+      "capital_freed_inr": -5550
+    },
+    {
+      "product_line": "Team Jersey",
+      "selected_model": "Seasonal index",
+      "mean_weekly_demand": 679,
+      "forecast_rmse_naive": 182.3,
+      "forecast_rmse_model": 155.1,
+      "safety_stock_naive": 862,
+      "safety_stock_model": 841,
+      "safety_stock_model_plus_tight_leadtimes": 496,
+      "reorder_point_model": 1810,
+      "leadtime_share_of_variance": 0.869,
+      "units_freed": 21,
+      "units_freed_by_leadtime_discipline": 345,
+      "capital_freed_inr": 3885
+    }
+  ]
+}

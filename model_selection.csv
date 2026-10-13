@@ -1,0 +1,5 @@
+product_line,selected_model,holdout_mape_naive,holdout_mape_selected,improvement_pct
+Lycra Tracksuit,Seasonal index,19.6,17.0,13.1
+School T-Shirt,Seasonal index,15.1,12.7,16.1
+Sports Day Kit,Seasonal index,19.4,20.3,-4.5
+Team Jersey,Seasonal index,19.8,20.5,-3.5

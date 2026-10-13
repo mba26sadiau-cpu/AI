@@ -1,0 +1,17 @@
+product_line,model,mae,rmse,mape_pct
+Lycra Tracksuit,Seasonal naive,280.3,410.3,19.6
+Lycra Tracksuit,4-week average,351.3,504.0,24.0
+Lycra Tracksuit,Seasonal index,236.5,345.8,17.0
+Lycra Tracksuit,Gradient boosting,322.7,503.4,21.3
+School T-Shirt,Seasonal naive,158.9,224.7,15.1
+School T-Shirt,4-week average,237.2,335.2,21.3
+School T-Shirt,Seasonal index,128.0,160.7,12.7
+School T-Shirt,Gradient boosting,178.5,232.6,17.4
+Sports Day Kit,Seasonal naive,366.1,685.6,19.4
+Sports Day Kit,4-week average,550.3,878.5,29.0
+Sports Day Kit,Seasonal index,348.9,711.9,20.3
+Sports Day Kit,Gradient boosting,364.7,688.3,19.7
+Team Jersey,Seasonal naive,127.0,182.3,19.8
+Team Jersey,4-week average,205.1,264.1,33.1
+Team Jersey,Seasonal index,121.3,155.1,20.5
+Team Jersey,Gradient boosting,161.8,230.5,27.2

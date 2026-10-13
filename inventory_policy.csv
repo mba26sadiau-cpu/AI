@@ -1,0 +1,5 @@
+product_line,selected_model,mean_weekly_demand,forecast_rmse_naive,forecast_rmse_model,safety_stock_naive,safety_stock_model,safety_stock_model_plus_tight_leadtimes,reorder_point_model,leadtime_share_of_variance,units_freed,units_freed_by_leadtime_discipline,capital_freed_inr
+Lycra Tracksuit,Seasonal index,1370,410.3,345.8,1775,1722,1043,3677,0.844,53,679,9805
+School T-Shirt,Seasonal index,1019,224.7,160.7,1256,1218,668,2672,0.933,38,550,7030
+Sports Day Kit,Seasonal index,1671,685.6,711.9,2352,2382,1699,4766,0.655,-30,683,-5550
+Team Jersey,Seasonal index,679,182.3,155.1,862,841,496,1810,0.869,21,345,3885
